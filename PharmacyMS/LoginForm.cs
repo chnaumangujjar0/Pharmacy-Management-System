@@ -41,16 +41,24 @@ namespace PharmacyMS
                     MessageBox.Show("✅ Welcome " + username + "!", "Login Success",
                                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    //Dashboard dashboard = new Dashboard();
-                    //dashboard.Show();
-                    //this.Hide(); // ← Hide login, open dashboard
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide(); // ← Hide login, open dashboard
                 }
                 else
                 {
                     MessageBox.Show("❌ Wrong Username or Password!", "Login Failed",
                                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPasswordBox.Clear();      // Clear password only
+                    txtUsernameBox.Focus();
                 }
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            // Set Enter key to trigger login
+            this.AcceptButton = btnLogin;
         }
     }
 }

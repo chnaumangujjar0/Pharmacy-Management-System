@@ -86,11 +86,13 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(805, 679);
+            this.btnLogin.Location = new System.Drawing.Point(786, 675);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(106, 39);
+            this.btnLogin.Size = new System.Drawing.Size(156, 44);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -111,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
             this.Text = "Login Form";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
