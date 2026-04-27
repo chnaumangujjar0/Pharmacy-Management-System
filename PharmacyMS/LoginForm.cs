@@ -38,8 +38,7 @@ namespace PharmacyMS
 
                 if (result == 1)
                 {
-                    MessageBox.Show("✅ Welcome " + username + "!", "Login Success",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
 
                     Dashboard dashboard = new Dashboard();
                     dashboard.Show();

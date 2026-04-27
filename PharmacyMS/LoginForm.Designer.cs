@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(632, 434);
+            this.label1.Location = new System.Drawing.Point(243, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 26);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(632, 545);
+            this.label2.Location = new System.Drawing.Point(245, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 26);
             this.label2.TabIndex = 1;
@@ -62,39 +62,39 @@
             // 
             // txtUsernameBox
             // 
-            this.txtUsernameBox.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtUsernameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.txtUsernameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsernameBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsernameBox.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsernameBox.Location = new System.Drawing.Point(639, 475);
+            this.txtUsernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.txtUsernameBox.Location = new System.Drawing.Point(250, 236);
             this.txtUsernameBox.Name = "txtUsernameBox";
-            this.txtUsernameBox.Size = new System.Drawing.Size(424, 34);
+            this.txtUsernameBox.Size = new System.Drawing.Size(386, 34);
             this.txtUsernameBox.TabIndex = 2;
             // 
             // txtPasswordBox
             // 
-            this.txtPasswordBox.BackColor = System.Drawing.Color.MidnightBlue;
+            this.txtPasswordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.txtPasswordBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPasswordBox.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordBox.ForeColor = System.Drawing.Color.Gray;
-            this.txtPasswordBox.Location = new System.Drawing.Point(637, 589);
+            this.txtPasswordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.txtPasswordBox.Location = new System.Drawing.Point(250, 345);
             this.txtPasswordBox.Name = "txtPasswordBox";
             this.txtPasswordBox.PasswordChar = '*';
-            this.txtPasswordBox.Size = new System.Drawing.Size(426, 34);
+            this.txtPasswordBox.Size = new System.Drawing.Size(386, 34);
             this.txtPasswordBox.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(786, 675);
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+            this.btnLogin.Location = new System.Drawing.Point(371, 435);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(156, 44);
             this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "login";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
@@ -102,15 +102,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1157, 784);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPasswordBox);
             this.Controls.Add(this.txtUsernameBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.Text = "Login Form";
             this.Load += new System.EventHandler(this.LoginForm_Load);

@@ -138,6 +138,7 @@
             this.pnlStats.Name = "pnlStats";
             this.pnlStats.Size = new System.Drawing.Size(949, 421);
             this.pnlStats.TabIndex = 1;
+           
             // 
             // lblWelcome
             // 
