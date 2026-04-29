@@ -11,10 +11,18 @@ namespace PharmacyMS
         {
             InitializeComponent();
         }
-
+        private void StyleGrid(DataGridView dgv)
+        {
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.GridColor = System.Drawing.Color.FromArgb(13, 46, 82);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.RowTemplate.Height = 30; // ← Taller rows
+        }
         // ── Form Load ─────────────────────────────────────────
         private void MedicineForm_Load(object sender, EventArgs e)
         {
+            StyleGrid(dgvMedicines);        
             LoadMedicines();
             txtSearch.TextChanged += TxtSearch_TextChanged; // ← Live search
         }

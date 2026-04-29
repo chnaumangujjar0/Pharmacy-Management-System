@@ -14,10 +14,18 @@ namespace PharmacyMS
         {
             InitializeComponent();
         }
-
+        private void StyleGrid(DataGridView dgv)
+        {
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.GridColor = System.Drawing.Color.FromArgb(13, 46, 82);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.RowTemplate.Height = 30; // ← Taller rows
+        }
         // ── Form Load ─────────────────────────────────────────
         private void SalesForm_Load_1(object sender, EventArgs e)
         {
+            StyleGrid(dgvCart);
             SetupCartTable();          // ← Create cart columns
             LoadMedicinesDropdown();   // ← Fill dropdown
             LoadTodaySales();          // ← Load today's sales

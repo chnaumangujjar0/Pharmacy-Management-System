@@ -59,5 +59,21 @@ namespace PharmacyMS
             // Set Enter key to trigger login
             this.AcceptButton = btnLogin;
         }
+
+        private void showPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPasswordBox.PasswordChar == '*')
+            {
+                showPassword.ForeColor = System.Drawing.Color.White;
+                txtPasswordBox.PasswordChar = '\0'; // Show password
+                txtPasswordBox.Focus(); // Keep focus on password box
+            }
+            else
+            {
+                showPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(188)))), ((int)(((byte)(156)))));
+                txtPasswordBox.PasswordChar = '*'; // Hide password
+                txtPasswordBox.Focus();
+            }
+        }
     }
 }

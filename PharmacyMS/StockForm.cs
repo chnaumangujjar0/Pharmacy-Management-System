@@ -11,10 +11,18 @@ namespace PharmacyMS
         {
             InitializeComponent();
         }
-
+        private void StyleGrid(DataGridView dgv)
+        {
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.GridColor = System.Drawing.Color.FromArgb(13, 46, 82);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.RowTemplate.Height = 30; // ← Taller rows
+        }
         // ── Form Load ─────────────────────────────────────────
         private void StockForm_Load(object sender, EventArgs e)
         {
+            StyleGrid(dgvStock);
             LoadMedicinesDropdown(); // ← Fill combobox
             LoadStockGrid();         // ← Load stock table
             LoadStockHistory();      // ← Load history table

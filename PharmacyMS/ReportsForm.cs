@@ -12,7 +12,14 @@ namespace PharmacyMS
         {
             InitializeComponent();
         }
-
+        private void StyleGrid(DataGridView dgv)
+        {
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.GridColor = System.Drawing.Color.FromArgb(13, 46, 82);
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.RowTemplate.Height = 30; // ← Taller rows
+        }
         // ── Form Load ─────────────────────────────────────────
         private void ReportsForm_Load(object sender, EventArgs e)
         {
@@ -21,6 +28,7 @@ namespace PharmacyMS
             dtTo.Value = DateTime.Now;
 
             // ← Auto load today's report
+            StyleGrid(dgvTodayReport);
             LoadTodayReport();
         }
 
@@ -56,7 +64,7 @@ namespace PharmacyMS
                     dgvTodayReport.DataSource = table;
 
                     // ← Update summary labels
-                    lblTodaySalesCount.Text = "Total: " + table.Rows.Count + " sales";
+                    lblTodaySalesCount.Text =  table.Rows.Count.ToString();
                     lblTodaySalesCount.ForeColor = System.Drawing.Color.FromArgb(79, 195, 161);
                 }
 
@@ -70,7 +78,7 @@ namespace PharmacyMS
                 {
                     con.Open();
                     decimal revenue = (decimal)cmd.ExecuteScalar();
-                    lblTodayRevenue.Text = "Revenue: Rs. " + revenue.ToString("0.00");
+                    lblTodayRevenue.Text = revenue.ToString("0.00");
                     lblTodayRevenue.ForeColor = System.Drawing.Color.FromArgb(241, 196, 15);
                 }
             }
@@ -339,12 +347,6 @@ namespace PharmacyMS
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        
-
-        
-
-        
 
         
     }

@@ -64,7 +64,7 @@
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(932, 69);
+            this.pnlHeader.Size = new System.Drawing.Size(1171, 69);
             this.pnlHeader.TabIndex = 0;
             // 
             // label1
@@ -72,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
-            this.label1.Location = new System.Drawing.Point(337, 20);
+            this.label1.Location = new System.Drawing.Point(485, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 27);
             this.label1.TabIndex = 1;
@@ -83,7 +83,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(19, 84);
+            this.label2.Location = new System.Drawing.Point(23, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(19, 152);
+            this.label3.Location = new System.Drawing.Point(23, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 22);
             this.label3.TabIndex = 2;
@@ -105,7 +105,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(19, 216);
+            this.label4.Location = new System.Drawing.Point(23, 269);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 22);
             this.label4.TabIndex = 3;
@@ -141,9 +141,9 @@
             this.cmbMedicine.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMedicine.ForeColor = System.Drawing.Color.White;
             this.cmbMedicine.FormattingEnabled = true;
-            this.cmbMedicine.Location = new System.Drawing.Point(23, 109);
+            this.cmbMedicine.Location = new System.Drawing.Point(27, 165);
             this.cmbMedicine.Name = "cmbMedicine";
-            this.cmbMedicine.Size = new System.Drawing.Size(261, 27);
+            this.cmbMedicine.Size = new System.Drawing.Size(331, 27);
             this.cmbMedicine.TabIndex = 6;
             // 
             // txtCustomer
@@ -152,9 +152,9 @@
             this.txtCustomer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCustomer.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustomer.ForeColor = System.Drawing.Color.White;
-            this.txtCustomer.Location = new System.Drawing.Point(23, 177);
+            this.txtCustomer.Location = new System.Drawing.Point(27, 231);
             this.txtCustomer.Name = "txtCustomer";
-            this.txtCustomer.Size = new System.Drawing.Size(261, 27);
+            this.txtCustomer.Size = new System.Drawing.Size(331, 27);
             this.txtCustomer.TabIndex = 7;
             // 
             // txtQuantity
@@ -163,9 +163,9 @@
             this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantity.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.ForeColor = System.Drawing.Color.White;
-            this.txtQuantity.Location = new System.Drawing.Point(23, 241);
+            this.txtQuantity.Location = new System.Drawing.Point(27, 297);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(261, 27);
+            this.txtQuantity.Size = new System.Drawing.Size(331, 27);
             this.txtQuantity.TabIndex = 8;
             // 
             // panel1
@@ -173,9 +173,9 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.lblTotalPrice);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(23, 346);
+            this.panel1.Location = new System.Drawing.Point(27, 402);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 48);
+            this.panel1.Size = new System.Drawing.Size(331, 48);
             this.panel1.TabIndex = 9;
             // 
             // lblTotalPrice
@@ -184,7 +184,7 @@
             this.lblTotalPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalPrice.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.lblTotalPrice.Location = new System.Drawing.Point(130, 9);
+            this.lblTotalPrice.Location = new System.Drawing.Point(196, 9);
             this.lblTotalPrice.Name = "lblTotalPrice";
             this.lblTotalPrice.Size = new System.Drawing.Size(99, 27);
             this.lblTotalPrice.TabIndex = 12;
@@ -195,9 +195,9 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblUnitPrice);
-            this.panel2.Location = new System.Drawing.Point(23, 295);
+            this.panel2.Location = new System.Drawing.Point(27, 351);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(261, 45);
+            this.panel2.Size = new System.Drawing.Size(331, 45);
             this.panel2.TabIndex = 10;
             // 
             // lblUnitPrice
@@ -206,7 +206,7 @@
             this.lblUnitPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblUnitPrice.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(195)))), ((int)(((byte)(161)))));
-            this.lblUnitPrice.Location = new System.Drawing.Point(141, 12);
+            this.lblUnitPrice.Location = new System.Drawing.Point(217, 11);
             this.lblUnitPrice.Name = "lblUnitPrice";
             this.lblUnitPrice.Size = new System.Drawing.Size(78, 21);
             this.lblUnitPrice.TabIndex = 11;
@@ -218,7 +218,7 @@
             this.lblRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.lblRevenue.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRevenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.lblRevenue.Location = new System.Drawing.Point(365, 82);
+            this.lblRevenue.Location = new System.Drawing.Point(626, 78);
             this.lblRevenue.Name = "lblRevenue";
             this.lblRevenue.Padding = new System.Windows.Forms.Padding(10);
             this.lblRevenue.Size = new System.Drawing.Size(263, 41);
@@ -232,13 +232,13 @@
             this.dgvSales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSales.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.dgvSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSales.Location = new System.Drawing.Point(369, 374);
+            this.dgvSales.Location = new System.Drawing.Point(417, 428);
             this.dgvSales.Name = "dgvSales";
             this.dgvSales.ReadOnly = true;
             this.dgvSales.RowHeadersWidth = 51;
             this.dgvSales.RowTemplate.Height = 24;
             this.dgvSales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSales.Size = new System.Drawing.Size(536, 190);
+            this.dgvSales.Size = new System.Drawing.Size(727, 204);
             this.dgvSales.TabIndex = 12;
             // 
             // dgvCart
@@ -248,14 +248,14 @@
             this.dgvCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.dgvCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCart.Location = new System.Drawing.Point(369, 149);
+            this.dgvCart.Location = new System.Drawing.Point(417, 167);
             this.dgvCart.Name = "dgvCart";
             this.dgvCart.ReadOnly = true;
             this.dgvCart.RowHeadersVisible = false;
             this.dgvCart.RowHeadersWidth = 51;
             this.dgvCart.RowTemplate.Height = 24;
             this.dgvCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCart.Size = new System.Drawing.Size(536, 191);
+            this.dgvCart.Size = new System.Drawing.Size(727, 212);
             this.dgvCart.TabIndex = 13;
             // 
             // btnAddToCart
@@ -263,9 +263,9 @@
             this.btnAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.btnAddToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddToCart.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToCart.Location = new System.Drawing.Point(23, 428);
+            this.btnAddToCart.Location = new System.Drawing.Point(27, 479);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(261, 30);
+            this.btnAddToCart.Size = new System.Drawing.Size(331, 39);
             this.btnAddToCart.TabIndex = 14;
             this.btnAddToCart.Text = "➕ Add to Cart";
             this.btnAddToCart.UseVisualStyleBackColor = false;
@@ -278,9 +278,9 @@
             this.btnCompleteSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompleteSale.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompleteSale.ForeColor = System.Drawing.Color.White;
-            this.btnCompleteSale.Location = new System.Drawing.Point(23, 473);
+            this.btnCompleteSale.Location = new System.Drawing.Point(27, 532);
             this.btnCompleteSale.Name = "btnCompleteSale";
-            this.btnCompleteSale.Size = new System.Drawing.Size(261, 28);
+            this.btnCompleteSale.Size = new System.Drawing.Size(331, 39);
             this.btnCompleteSale.TabIndex = 15;
             this.btnCompleteSale.Text = "🧾 Complete Sale";
             this.btnCompleteSale.UseVisualStyleBackColor = false;
@@ -292,7 +292,7 @@
             this.lblGrandTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.lblGrandTotal.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrandTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.lblGrandTotal.Location = new System.Drawing.Point(26, 518);
+            this.lblGrandTotal.Location = new System.Drawing.Point(29, 586);
             this.lblGrandTotal.Name = "lblGrandTotal";
             this.lblGrandTotal.Padding = new System.Windows.Forms.Padding(5, 10, 10, 10);
             this.lblGrandTotal.Size = new System.Drawing.Size(241, 46);
@@ -305,42 +305,42 @@
             this.btnRemoveItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveItem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveItem.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveItem.Location = new System.Drawing.Point(799, 121);
+            this.btnRemoveItem.Location = new System.Drawing.Point(976, 124);
             this.btnRemoveItem.Name = "btnRemoveItem";
-            this.btnRemoveItem.Size = new System.Drawing.Size(106, 25);
+            this.btnRemoveItem.Size = new System.Drawing.Size(168, 35);
             this.btnRemoveItem.TabIndex = 17;
-            this.btnRemoveItem.Text = "❌ Remove Selected";
+            this.btnRemoveItem.Text = "❌ Remove Item";
             this.btnRemoveItem.UseVisualStyleBackColor = false;
             this.btnRemoveItem.Click += new System.EventHandler(this.btnRemoveItem_Click_1);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(365, 127);
+            this.label7.Location = new System.Drawing.Point(413, 135);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(109, 19);
+            this.label7.Size = new System.Drawing.Size(130, 24);
             this.label7.TabIndex = 18;
             this.label7.Text = "Carted items";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(365, 352);
+            this.label8.Location = new System.Drawing.Point(413, 389);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(51, 19);
+            this.label8.Size = new System.Drawing.Size(141, 24);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Sales";
+            this.label8.Text = "Today\'s Sales";
             // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(932, 578);
+            this.ClientSize = new System.Drawing.Size(1171, 655);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRemoveItem);

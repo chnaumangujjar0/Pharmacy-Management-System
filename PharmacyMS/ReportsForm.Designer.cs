@@ -85,7 +85,7 @@
             this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Location = new System.Drawing.Point(0, 1);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(932, 55);
+            this.pnlHeader.Size = new System.Drawing.Size(1171, 56);
             this.pnlHeader.TabIndex = 0;
             // 
             // btnExport
@@ -94,7 +94,7 @@
             this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExport.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExport.ForeColor = System.Drawing.Color.White;
-            this.btnExport.Location = new System.Drawing.Point(717, 13);
+            this.btnExport.Location = new System.Drawing.Point(943, 13);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(192, 32);
             this.btnExport.TabIndex = 2;
@@ -124,7 +124,7 @@
             this.tabReports.Location = new System.Drawing.Point(44, 90);
             this.tabReports.Name = "tabReports";
             this.tabReports.SelectedIndex = 0;
-            this.tabReports.Size = new System.Drawing.Size(842, 422);
+            this.tabReports.Size = new System.Drawing.Size(1091, 524);
             this.tabReports.TabIndex = 1;
             // 
             // tabToday
@@ -138,7 +138,7 @@
             this.tabToday.Location = new System.Drawing.Point(4, 28);
             this.tabToday.Name = "tabToday";
             this.tabToday.Padding = new System.Windows.Forms.Padding(3);
-            this.tabToday.Size = new System.Drawing.Size(834, 390);
+            this.tabToday.Size = new System.Drawing.Size(1083, 492);
             this.tabToday.TabIndex = 0;
             this.tabToday.Text = "📅 Today\'s Sales";
             // 
@@ -150,13 +150,13 @@
             this.dgvTodayReport.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
             this.dgvTodayReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTodayReport.ColumnHeadersVisible = false;
-            this.dgvTodayReport.Location = new System.Drawing.Point(29, 144);
+            this.dgvTodayReport.Location = new System.Drawing.Point(29, 172);
             this.dgvTodayReport.Name = "dgvTodayReport";
             this.dgvTodayReport.ReadOnly = true;
             this.dgvTodayReport.RowHeadersWidth = 51;
             this.dgvTodayReport.RowTemplate.Height = 24;
             this.dgvTodayReport.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTodayReport.Size = new System.Drawing.Size(789, 225);
+            this.dgvTodayReport.Size = new System.Drawing.Size(1021, 289);
             this.dgvTodayReport.TabIndex = 7;
             // 
             // btnLoadToday
@@ -165,9 +165,9 @@
             this.btnLoadToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadToday.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadToday.ForeColor = System.Drawing.Color.White;
-            this.btnLoadToday.Location = new System.Drawing.Point(669, 67);
+            this.btnLoadToday.Location = new System.Drawing.Point(842, 74);
             this.btnLoadToday.Name = "btnLoadToday";
-            this.btnLoadToday.Size = new System.Drawing.Size(149, 40);
+            this.btnLoadToday.Size = new System.Drawing.Size(179, 57);
             this.btnLoadToday.TabIndex = 6;
             this.btnLoadToday.Text = "🔄 Refresh";
             this.btnLoadToday.UseVisualStyleBackColor = false;
@@ -178,20 +178,20 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.lblTodayRevenue);
-            this.panel2.Location = new System.Drawing.Point(278, 27);
+            this.panel2.Location = new System.Drawing.Point(304, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(173, 81);
+            this.panel2.Size = new System.Drawing.Size(216, 104);
             this.panel2.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(16, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 19);
+            this.label4.Size = new System.Drawing.Size(145, 24);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total Revenue";
             // 
@@ -201,7 +201,7 @@
             this.lblTodayRevenue.BackColor = System.Drawing.Color.Transparent;
             this.lblTodayRevenue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTodayRevenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.lblTodayRevenue.Location = new System.Drawing.Point(16, 47);
+            this.lblTodayRevenue.Location = new System.Drawing.Point(16, 54);
             this.lblTodayRevenue.Name = "lblTodayRevenue";
             this.lblTodayRevenue.Size = new System.Drawing.Size(21, 24);
             this.lblTodayRevenue.TabIndex = 3;
@@ -214,18 +214,18 @@
             this.panel1.Controls.Add(this.lblTodaySalesCount);
             this.panel1.Location = new System.Drawing.Point(29, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 81);
+            this.panel1.Size = new System.Drawing.Size(209, 104);
             this.panel1.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(15, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 19);
+            this.label2.Size = new System.Drawing.Size(120, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Total Sales ";
             // 
@@ -235,7 +235,7 @@
             this.lblTodaySalesCount.BackColor = System.Drawing.Color.Transparent;
             this.lblTodaySalesCount.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTodaySalesCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.lblTodaySalesCount.Location = new System.Drawing.Point(15, 47);
+            this.lblTodaySalesCount.Location = new System.Drawing.Point(15, 54);
             this.lblTodaySalesCount.Name = "lblTodaySalesCount";
             this.lblTodaySalesCount.Size = new System.Drawing.Size(21, 24);
             this.lblTodaySalesCount.TabIndex = 1;
@@ -254,7 +254,7 @@
             this.tabDateRange.Location = new System.Drawing.Point(4, 28);
             this.tabDateRange.Name = "tabDateRange";
             this.tabDateRange.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDateRange.Size = new System.Drawing.Size(834, 390);
+            this.tabDateRange.Size = new System.Drawing.Size(1083, 492);
             this.tabDateRange.TabIndex = 1;
             this.tabDateRange.Text = "📅 Date Range";
             // 
@@ -264,21 +264,21 @@
             this.dgvDateRange.AllowUserToDeleteRows = false;
             this.dgvDateRange.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
             this.dgvDateRange.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDateRange.Location = new System.Drawing.Point(24, 154);
+            this.dgvDateRange.Location = new System.Drawing.Point(35, 191);
             this.dgvDateRange.Name = "dgvDateRange";
             this.dgvDateRange.ReadOnly = true;
             this.dgvDateRange.RowHeadersWidth = 51;
             this.dgvDateRange.RowTemplate.Height = 24;
-            this.dgvDateRange.Size = new System.Drawing.Size(787, 207);
+            this.dgvDateRange.Size = new System.Drawing.Size(1012, 269);
             this.dgvDateRange.TabIndex = 6;
             // 
             // lblRangeRevenue
             // 
             this.lblRangeRevenue.AutoSize = true;
-            this.lblRangeRevenue.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRangeRevenue.Location = new System.Drawing.Point(20, 90);
+            this.lblRangeRevenue.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRangeRevenue.Location = new System.Drawing.Point(31, 128);
             this.lblRangeRevenue.Name = "lblRangeRevenue";
-            this.lblRangeRevenue.Size = new System.Drawing.Size(106, 21);
+            this.lblRangeRevenue.Size = new System.Drawing.Size(130, 27);
             this.lblRangeRevenue.TabIndex = 5;
             this.lblRangeRevenue.Text = "Revenue : ";
             // 
@@ -288,9 +288,9 @@
             this.btnDateRange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDateRange.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDateRange.ForeColor = System.Drawing.Color.White;
-            this.btnDateRange.Location = new System.Drawing.Point(594, 43);
+            this.btnDateRange.Location = new System.Drawing.Point(824, 58);
             this.btnDateRange.Name = "btnDateRange";
-            this.btnDateRange.Size = new System.Drawing.Size(217, 31);
+            this.btnDateRange.Size = new System.Drawing.Size(223, 42);
             this.btnDateRange.TabIndex = 4;
             this.btnDateRange.Text = "Generate Report";
             this.btnDateRange.UseVisualStyleBackColor = false;
@@ -300,7 +300,7 @@
             // 
             this.dtTo.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtTo.Location = new System.Drawing.Point(327, 43);
+            this.dtTo.Location = new System.Drawing.Point(402, 58);
             this.dtTo.Name = "dtTo";
             this.dtTo.Size = new System.Drawing.Size(178, 27);
             this.dtTo.TabIndex = 3;
@@ -309,7 +309,7 @@
             // 
             this.dtFrom.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFrom.Location = new System.Drawing.Point(89, 39);
+            this.dtFrom.Location = new System.Drawing.Point(120, 58);
             this.dtFrom.Name = "dtFrom";
             this.dtFrom.Size = new System.Drawing.Size(178, 27);
             this.dtFrom.TabIndex = 2;
@@ -318,7 +318,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(283, 43);
+            this.label5.Location = new System.Drawing.Point(358, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 21);
             this.label5.TabIndex = 1;
@@ -328,7 +328,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 39);
+            this.label3.Location = new System.Drawing.Point(31, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 21);
             this.label3.TabIndex = 0;
@@ -342,7 +342,7 @@
             this.tabBestSelling.Location = new System.Drawing.Point(4, 28);
             this.tabBestSelling.Name = "tabBestSelling";
             this.tabBestSelling.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBestSelling.Size = new System.Drawing.Size(834, 390);
+            this.tabBestSelling.Size = new System.Drawing.Size(1083, 492);
             this.tabBestSelling.TabIndex = 2;
             this.tabBestSelling.Text = "🏆 Best Selling";
             // 
@@ -352,12 +352,12 @@
             this.dgvBestSelling.AllowUserToDeleteRows = false;
             this.dgvBestSelling.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
             this.dgvBestSelling.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBestSelling.Location = new System.Drawing.Point(32, 100);
+            this.dgvBestSelling.Location = new System.Drawing.Point(32, 108);
             this.dgvBestSelling.Name = "dgvBestSelling";
             this.dgvBestSelling.ReadOnly = true;
             this.dgvBestSelling.RowHeadersWidth = 51;
             this.dgvBestSelling.RowTemplate.Height = 24;
-            this.dgvBestSelling.Size = new System.Drawing.Size(770, 261);
+            this.dgvBestSelling.Size = new System.Drawing.Size(1018, 349);
             this.dgvBestSelling.TabIndex = 1;
             // 
             // btnBestSelling
@@ -366,9 +366,9 @@
             this.btnBestSelling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBestSelling.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBestSelling.ForeColor = System.Drawing.Color.White;
-            this.btnBestSelling.Location = new System.Drawing.Point(680, 41);
+            this.btnBestSelling.Location = new System.Drawing.Point(895, 39);
             this.btnBestSelling.Name = "btnBestSelling";
-            this.btnBestSelling.Size = new System.Drawing.Size(122, 34);
+            this.btnBestSelling.Size = new System.Drawing.Size(155, 34);
             this.btnBestSelling.TabIndex = 0;
             this.btnBestSelling.Text = "Refresh";
             this.btnBestSelling.UseVisualStyleBackColor = false;
@@ -384,7 +384,7 @@
             this.tabLowStock.Location = new System.Drawing.Point(4, 28);
             this.tabLowStock.Name = "tabLowStock";
             this.tabLowStock.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLowStock.Size = new System.Drawing.Size(834, 390);
+            this.tabLowStock.Size = new System.Drawing.Size(1083, 492);
             this.tabLowStock.TabIndex = 3;
             this.tabLowStock.Text = "⚠️ Low Stock";
             // 
@@ -395,13 +395,13 @@
             this.dgvLowStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLowStock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
             this.dgvLowStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLowStock.Location = new System.Drawing.Point(31, 121);
+            this.dgvLowStock.Location = new System.Drawing.Point(31, 130);
             this.dgvLowStock.Name = "dgvLowStock";
             this.dgvLowStock.ReadOnly = true;
             this.dgvLowStock.RowHeadersWidth = 51;
             this.dgvLowStock.RowTemplate.Height = 24;
             this.dgvLowStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLowStock.Size = new System.Drawing.Size(777, 245);
+            this.dgvLowStock.Size = new System.Drawing.Size(1015, 335);
             this.dgvLowStock.TabIndex = 3;
             // 
             // btnLowStock
@@ -409,9 +409,9 @@
             this.btnLowStock.BackColor = System.Drawing.Color.Coral;
             this.btnLowStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLowStock.ForeColor = System.Drawing.Color.White;
-            this.btnLowStock.Location = new System.Drawing.Point(664, 57);
+            this.btnLowStock.Location = new System.Drawing.Point(885, 57);
             this.btnLowStock.Name = "btnLowStock";
-            this.btnLowStock.Size = new System.Drawing.Size(144, 32);
+            this.btnLowStock.Size = new System.Drawing.Size(161, 43);
             this.btnLowStock.TabIndex = 2;
             this.btnLowStock.Text = "Check Stock";
             this.btnLowStock.UseVisualStyleBackColor = false;
@@ -422,7 +422,7 @@
             this.txtStockLimit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
             this.txtStockLimit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStockLimit.ForeColor = System.Drawing.Color.White;
-            this.txtStockLimit.Location = new System.Drawing.Point(220, 57);
+            this.txtStockLimit.Location = new System.Drawing.Point(239, 62);
             this.txtStockLimit.Name = "txtStockLimit";
             this.txtStockLimit.Size = new System.Drawing.Size(116, 27);
             this.txtStockLimit.TabIndex = 1;
@@ -431,10 +431,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(27, 62);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 21);
+            this.label6.Size = new System.Drawing.Size(183, 24);
             this.label6.TabIndex = 0;
             this.label6.Text = "Stock Alert Below:";
             // 
@@ -448,7 +448,7 @@
             this.tabExpiry.Location = new System.Drawing.Point(4, 28);
             this.tabExpiry.Name = "tabExpiry";
             this.tabExpiry.Padding = new System.Windows.Forms.Padding(3);
-            this.tabExpiry.Size = new System.Drawing.Size(834, 390);
+            this.tabExpiry.Size = new System.Drawing.Size(1083, 492);
             this.tabExpiry.TabIndex = 4;
             this.tabExpiry.Text = "💊 Expiry Alert";
             // 
@@ -465,7 +465,7 @@
             this.dgvExpiry.RowHeadersWidth = 51;
             this.dgvExpiry.RowTemplate.Height = 24;
             this.dgvExpiry.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvExpiry.Size = new System.Drawing.Size(764, 222);
+            this.dgvExpiry.Size = new System.Drawing.Size(1010, 335);
             this.dgvExpiry.TabIndex = 3;
             // 
             // btnExpiry
@@ -474,9 +474,9 @@
             this.btnExpiry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExpiry.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpiry.ForeColor = System.Drawing.Color.White;
-            this.btnExpiry.Location = new System.Drawing.Point(631, 59);
+            this.btnExpiry.Location = new System.Drawing.Point(857, 62);
             this.btnExpiry.Name = "btnExpiry";
-            this.btnExpiry.Size = new System.Drawing.Size(171, 29);
+            this.btnExpiry.Size = new System.Drawing.Size(191, 39);
             this.btnExpiry.TabIndex = 2;
             this.btnExpiry.Text = "Check Expiry";
             this.btnExpiry.UseVisualStyleBackColor = false;
@@ -488,19 +488,19 @@
             this.txtExpiryDays.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtExpiryDays.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpiryDays.ForeColor = System.Drawing.Color.White;
-            this.txtExpiryDays.Location = new System.Drawing.Point(268, 59);
+            this.txtExpiryDays.Location = new System.Drawing.Point(283, 62);
             this.txtExpiryDays.Name = "txtExpiryDays";
-            this.txtExpiryDays.Size = new System.Drawing.Size(165, 27);
+            this.txtExpiryDays.Size = new System.Drawing.Size(194, 27);
             this.txtExpiryDays.TabIndex = 1;
             this.txtExpiryDays.Text = "30";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(34, 62);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(207, 21);
+            this.label7.Size = new System.Drawing.Size(222, 24);
             this.label7.TabIndex = 0;
             this.label7.Text = "Expiring within (days):";
             // 
@@ -509,7 +509,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(932, 553);
+            this.ClientSize = new System.Drawing.Size(1171, 655);
             this.Controls.Add(this.tabReports);
             this.Controls.Add(this.pnlHeader);
             this.ForeColor = System.Drawing.Color.Coral;
@@ -518,6 +518,7 @@
             this.Name = "ReportsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reports & Analytics";
+          
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.tabReports.ResumeLayout(false);
