@@ -109,9 +109,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.label1.Location = new System.Drawing.Point(20, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 27);
+            this.label1.Size = new System.Drawing.Size(308, 27);
             this.label1.TabIndex = 1;
-            this.label1.Text = "📊 Reports & Analytics";
+            this.label1.Text = "📊 Reports And Analytics";
             // 
             // tabReports
             // 
@@ -518,7 +518,6 @@
             this.Name = "ReportsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reports & Analytics";
-          
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             this.tabReports.ResumeLayout(false);
