@@ -49,6 +49,8 @@
             this.btnCompleteSale = new System.Windows.Forms.Button();
             this.lblGrandTotal = new System.Windows.Forms.Label();
             this.btnRemoveItem = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -171,7 +173,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.panel1.Controls.Add(this.lblTotalPrice);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(23, 336);
+            this.panel1.Location = new System.Drawing.Point(23, 346);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 48);
             this.panel1.TabIndex = 9;
@@ -193,7 +195,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblUnitPrice);
-            this.panel2.Location = new System.Drawing.Point(23, 285);
+            this.panel2.Location = new System.Drawing.Point(23, 295);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(261, 45);
             this.panel2.TabIndex = 10;
@@ -230,13 +232,13 @@
             this.dgvSales.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSales.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.dgvSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSales.Location = new System.Drawing.Point(369, 336);
+            this.dgvSales.Location = new System.Drawing.Point(369, 374);
             this.dgvSales.Name = "dgvSales";
             this.dgvSales.ReadOnly = true;
             this.dgvSales.RowHeadersWidth = 51;
             this.dgvSales.RowTemplate.Height = 24;
             this.dgvSales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSales.Size = new System.Drawing.Size(536, 200);
+            this.dgvSales.Size = new System.Drawing.Size(536, 190);
             this.dgvSales.TabIndex = 12;
             // 
             // dgvCart
@@ -246,7 +248,7 @@
             this.dgvCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.dgvCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCart.Location = new System.Drawing.Point(369, 126);
+            this.dgvCart.Location = new System.Drawing.Point(369, 149);
             this.dgvCart.Name = "dgvCart";
             this.dgvCart.ReadOnly = true;
             this.dgvCart.RowHeadersVisible = false;
@@ -261,9 +263,9 @@
             this.btnAddToCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.btnAddToCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddToCart.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToCart.Location = new System.Drawing.Point(25, 396);
+            this.btnAddToCart.Location = new System.Drawing.Point(23, 428);
             this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(261, 33);
+            this.btnAddToCart.Size = new System.Drawing.Size(261, 30);
             this.btnAddToCart.TabIndex = 14;
             this.btnAddToCart.Text = "➕ Add to Cart";
             this.btnAddToCart.UseVisualStyleBackColor = false;
@@ -276,9 +278,9 @@
             this.btnCompleteSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompleteSale.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompleteSale.ForeColor = System.Drawing.Color.White;
-            this.btnCompleteSale.Location = new System.Drawing.Point(25, 441);
+            this.btnCompleteSale.Location = new System.Drawing.Point(23, 473);
             this.btnCompleteSale.Name = "btnCompleteSale";
-            this.btnCompleteSale.Size = new System.Drawing.Size(261, 31);
+            this.btnCompleteSale.Size = new System.Drawing.Size(261, 28);
             this.btnCompleteSale.TabIndex = 15;
             this.btnCompleteSale.Text = "🧾 Complete Sale";
             this.btnCompleteSale.UseVisualStyleBackColor = false;
@@ -290,7 +292,7 @@
             this.lblGrandTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.lblGrandTotal.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrandTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.lblGrandTotal.Location = new System.Drawing.Point(28, 489);
+            this.lblGrandTotal.Location = new System.Drawing.Point(26, 518);
             this.lblGrandTotal.Name = "lblGrandTotal";
             this.lblGrandTotal.Padding = new System.Windows.Forms.Padding(5, 10, 10, 10);
             this.lblGrandTotal.Size = new System.Drawing.Size(241, 46);
@@ -303,20 +305,44 @@
             this.btnRemoveItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveItem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveItem.ForeColor = System.Drawing.Color.White;
-            this.btnRemoveItem.Location = new System.Drawing.Point(756, 88);
+            this.btnRemoveItem.Location = new System.Drawing.Point(799, 121);
             this.btnRemoveItem.Name = "btnRemoveItem";
-            this.btnRemoveItem.Size = new System.Drawing.Size(149, 32);
+            this.btnRemoveItem.Size = new System.Drawing.Size(106, 25);
             this.btnRemoveItem.TabIndex = 17;
             this.btnRemoveItem.Text = "❌ Remove Selected";
             this.btnRemoveItem.UseVisualStyleBackColor = false;
             this.btnRemoveItem.Click += new System.EventHandler(this.btnRemoveItem_Click_1);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(365, 127);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 19);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Carted items";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(365, 352);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 19);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Sales";
             // 
             // SalesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(46)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(932, 553);
+            this.ClientSize = new System.Drawing.Size(932, 578);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnRemoveItem);
             this.Controls.Add(this.lblGrandTotal);
             this.Controls.Add(this.btnCompleteSale);
@@ -375,5 +401,7 @@
         private System.Windows.Forms.Button btnCompleteSale;
         private System.Windows.Forms.Label lblGrandTotal;
         private System.Windows.Forms.Button btnRemoveItem;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
