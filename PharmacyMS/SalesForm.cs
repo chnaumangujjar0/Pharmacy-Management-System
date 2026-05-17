@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 namespace PharmacyMS
 {
@@ -25,6 +26,17 @@ namespace PharmacyMS
         // ── Form Load ─────────────────────────────────────────
         private void SalesForm_Load_1(object sender, EventArgs e)
         {
+            ThemeHelper.ApplyFormTheme(this);
+            ThemeHelper.ApplyHeader(pnlHeader, lblTitle);
+            ThemeHelper.ApplyButton(btnAddToCart, ThemeHelper.AccentPurple);
+            ThemeHelper.ApplyButton(btnCompleteSale, ThemeHelper.AccentPink);
+            ThemeHelper.ApplyButton(btnRemoveItem, ColorTranslator.FromHtml("#E74C3C"));
+            ThemeHelper.ApplyComboBox(cmbMedicine);
+            ThemeHelper.ApplyTextBox(txtCustomer);
+            ThemeHelper.ApplyTextBox(txtQuantity);
+            ThemeHelper.ApplyGrid(dgvCart);
+            ThemeHelper.ApplyGrid(dgvSales);
+            ThemeHelper.FadeIn(this);
             StyleGrid(dgvCart);
             SetupCartTable();          // ← Create cart columns
             LoadMedicinesDropdown();   // ← Fill dropdown
@@ -381,6 +393,61 @@ namespace PharmacyMS
             btnCompleteSale.Enabled = false;
         }
 
-       
+        // ── Get Payment Method ────────────────────────────────
+        private string GetPaymentMethod()
+        {
+            if (rbCard.Checked) return "Card";
+            if (rbInsurance.Checked) return "Insurance";
+            return "Cash";
+        }
+
+        // ── Print Receipt ─────────────────────────────────────
+        private void PrintReceipt(string customerName, decimal grandTotal)
+        {
+            System.Text.StringBuilder receipt = new System.Text.StringBuilder();
+
+            receipt.AppendLine("╔══════════════════════════════════╗");
+            receipt.AppendLine("║      PHARMACY MANAGEMENT SYSTEM  ║");
+            receipt.AppendLine("║         Sales Receipt            ║");
+            receipt.AppendLine("╚══════════════════════════════════╝");
+            receipt.AppendLine($"Date     : {DateTime.Now:dd/MM/yyyy HH:mm}");
+            receipt.AppendLine($"Customer : {customerName}");
+            receipt.AppendLine($"Payment  : {GetPaymentMethod()}");
+            receipt.AppendLine("──────────────────────────────────");
+
+            foreach (DataRow r in cartTable.Rows)
+            {
+                receipt.AppendLine($"{r["Medicine"],-20} x{r["Quantity"]}");
+                receipt.AppendLine($"  @ Rs.{r["Unit Price"]} = Rs.{r["Total"]}");
+            }
+
+            receipt.AppendLine("──────────────────────────────────");
+            receipt.AppendLine($"Grand Total : Rs. {grandTotal:0.00}");
+            receipt.AppendLine("══════════════════════════════════");
+            receipt.AppendLine("    Thank you for your purchase!   ");
+            receipt.AppendLine("══════════════════════════════════");
+
+            // ← Show receipt in a message box
+            MessageBox.Show(receipt.ToString(), "🧾 Receipt",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // ← Call PrintReceipt after successful sale
+        private void btnPrintReceipt_Click_1(object sender, EventArgs e)
+        {
+            if (cartTable.Rows.Count == 0)
+            {
+                MessageBox.Show("No items in cart!", "Empty Cart",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            decimal total = 0;
+            foreach (DataRow r in cartTable.Rows)
+                total += Convert.ToDecimal(r["Total"]);
+
+            PrintReceipt(txtCustomer.Text.Trim(), total);
+        }
+
+        
     }
 }

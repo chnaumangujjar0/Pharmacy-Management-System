@@ -56,6 +56,9 @@ namespace PharmacyMS
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            
+            // ✅ Fade in animation
+            ThemeHelper.FadeIn(this);
             // Set Enter key to trigger login
             this.AcceptButton = btnLogin;
         }

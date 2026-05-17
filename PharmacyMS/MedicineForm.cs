@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 namespace PharmacyMS
 {
@@ -22,6 +23,20 @@ namespace PharmacyMS
         // ── Form Load ─────────────────────────────────────────
         private void MedicineForm_Load(object sender, EventArgs e)
         {
+            ThemeHelper.ApplyFormTheme(this);
+            ThemeHelper.ApplyHeader(pnlHeader, lblTitle);
+            ThemeHelper.ApplyButton(btnAdd, ThemeHelper.AccentGreen);
+            ThemeHelper.ApplyButton(btnUpdate, ThemeHelper.AccentPurple);
+            ThemeHelper.ApplyButton(btnDelete, ThemeHelper.AccentPink);
+            ThemeHelper.ApplyButton(btnClear, ColorTranslator.FromHtml("#7F8C8D"));
+            ThemeHelper.ApplyTextBox(txtName);
+            ThemeHelper.ApplyTextBox(txtCategory);
+            ThemeHelper.ApplyTextBox(txtPrice);
+            ThemeHelper.ApplyTextBox(txtStock);
+            ThemeHelper.ApplyTextBox(txtSupplier);
+            ThemeHelper.ApplyTextBox(txtSearch);
+            ThemeHelper.ApplyGrid(dgvMedicines);
+            ThemeHelper.FadeIn(this);
             StyleGrid(dgvMedicines);        
             LoadMedicines();
             txtSearch.TextChanged += TxtSearch_TextChanged; // ← Live search

@@ -1,5 +1,6 @@
-﻿using System;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PharmacyMS
@@ -13,6 +14,22 @@ namespace PharmacyMS
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            
+
+            // ✅ Greeting
+            int hour = DateTime.Now.Hour;
+            string greeting = hour < 12 ? "🌅 Good Morning"
+                            : hour < 17 ? "☀️ Good Afternoon"
+                            : "🌙 Good Evening";
+
+            lblWelcome.Text = $"{greeting}, — {DateTime.Now:dddd, dd MMM yyyy}";
+            lblWelcome.ForeColor = ThemeHelper.AccentGold;
+            lblWelcome.Font = new Font("Segoe UI", 11f, FontStyle.Bold);
+
+            
+
+            // ✅ Fade in
+            ThemeHelper.FadeIn(this);
             LoadStats();
         }
 
@@ -89,6 +106,12 @@ namespace PharmacyMS
         {
             ReportsForm reportsForm = new ReportsForm();
             reportsForm.Show();
+        }
+
+        private void btnSuppliers_Click(object sender, EventArgs e)
+        {
+            SupplierForm supplierForm = new SupplierForm();
+            supplierForm.Show();
         }
 
         // ── Logout ────────────────────────────────────────────

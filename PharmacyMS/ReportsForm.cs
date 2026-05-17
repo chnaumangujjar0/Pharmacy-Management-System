@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 namespace PharmacyMS
 {
@@ -23,6 +24,20 @@ namespace PharmacyMS
         // ── Form Load ─────────────────────────────────────────
         private void ReportsForm_Load(object sender, EventArgs e)
         {
+            ThemeHelper.ApplyFormTheme(this);
+            ThemeHelper.ApplyHeader(pnlHeader, lblTitle);
+            ThemeHelper.ApplyButton(btnLoadToday, ThemeHelper.AccentPink);
+            ThemeHelper.ApplyButton(btnDateRange, ThemeHelper.AccentPurple);
+            ThemeHelper.ApplyButton(btnBestSelling, ThemeHelper.AccentGold);
+            ThemeHelper.ApplyButton(btnLowStock, ColorTranslator.FromHtml("#E74C3C"));
+            ThemeHelper.ApplyButton(btnExpiry, ThemeHelper.AccentGreen);
+            ThemeHelper.ApplyButton(btnExport, ColorTranslator.FromHtml("#27AE60"));
+            ThemeHelper.ApplyGrid(dgvTodayReport);
+            ThemeHelper.ApplyGrid(dgvDateRange);
+            ThemeHelper.ApplyGrid(dgvBestSelling);
+            ThemeHelper.ApplyGrid(dgvLowStock);
+            ThemeHelper.ApplyGrid(dgvExpiry);
+            ThemeHelper.FadeIn(this);
             // ← Set default dates
             dtFrom.Value = DateTime.Now.AddDays(-30);
             dtTo.Value = DateTime.Now;

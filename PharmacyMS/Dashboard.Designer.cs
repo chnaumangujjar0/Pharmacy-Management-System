@@ -41,6 +41,7 @@
             this.lblTotalMedicines = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnSuppliers = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.pnlStats.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             this.btnMedicines.Margin = new System.Windows.Forms.Padding(4);
             this.btnMedicines.Name = "btnMedicines";
             this.btnMedicines.Padding = new System.Windows.Forms.Padding(10);
-            this.btnMedicines.Size = new System.Drawing.Size(207, 173);
+            this.btnMedicines.Size = new System.Drawing.Size(164, 173);
             this.btnMedicines.TabIndex = 1;
             this.btnMedicines.Text = "💊 Medicines";
             this.btnMedicines.UseVisualStyleBackColor = false;
@@ -85,11 +86,11 @@
             // 
             this.btnStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.btnStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStock.Location = new System.Drawing.Point(298, 99);
+            this.btnStock.Location = new System.Drawing.Point(259, 99);
             this.btnStock.Margin = new System.Windows.Forms.Padding(4);
             this.btnStock.Name = "btnStock";
             this.btnStock.Padding = new System.Windows.Forms.Padding(10);
-            this.btnStock.Size = new System.Drawing.Size(225, 173);
+            this.btnStock.Size = new System.Drawing.Size(161, 173);
             this.btnStock.TabIndex = 2;
             this.btnStock.Text = "📦 Stock";
             this.btnStock.UseVisualStyleBackColor = false;
@@ -99,11 +100,11 @@
             // 
             this.btnSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSales.Location = new System.Drawing.Point(584, 99);
+            this.btnSales.Location = new System.Drawing.Point(489, 99);
             this.btnSales.Margin = new System.Windows.Forms.Padding(4);
             this.btnSales.Name = "btnSales";
             this.btnSales.Padding = new System.Windows.Forms.Padding(10);
-            this.btnSales.Size = new System.Drawing.Size(256, 173);
+            this.btnSales.Size = new System.Drawing.Size(172, 173);
             this.btnSales.TabIndex = 3;
             this.btnSales.Text = "🧾 Sales";
             this.btnSales.UseVisualStyleBackColor = false;
@@ -113,11 +114,11 @@
             // 
             this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Location = new System.Drawing.Point(898, 99);
+            this.btnReports.Location = new System.Drawing.Point(736, 99);
             this.btnReports.Margin = new System.Windows.Forms.Padding(4);
             this.btnReports.Name = "btnReports";
             this.btnReports.Padding = new System.Windows.Forms.Padding(10);
-            this.btnReports.Size = new System.Drawing.Size(244, 173);
+            this.btnReports.Size = new System.Drawing.Size(182, 173);
             this.btnReports.TabIndex = 4;
             this.btnReports.Text = "📊 Reports";
             this.btnReports.UseVisualStyleBackColor = false;
@@ -126,6 +127,7 @@
             // pnlStats
             // 
             this.pnlStats.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(42)))), ((int)(((byte)(74)))));
+            this.pnlStats.Controls.Add(this.btnSuppliers);
             this.pnlStats.Controls.Add(this.lblWelcome);
             this.pnlStats.Controls.Add(this.btnReports);
             this.pnlStats.Controls.Add(this.lblTodaySales);
@@ -217,6 +219,18 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // btnSuppliers
+            // 
+            this.btnSuppliers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuppliers.Location = new System.Drawing.Point(976, 99);
+            this.btnSuppliers.Name = "btnSuppliers";
+            this.btnSuppliers.Size = new System.Drawing.Size(166, 173);
+            this.btnSuppliers.TabIndex = 6;
+            this.btnSuppliers.Text = "🏭 SUPPLIERS";
+            this.btnSuppliers.UseVisualStyleBackColor = false;
+            this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
@@ -260,5 +274,6 @@
         private System.Windows.Forms.Label lblWelcome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnSuppliers;
     }
 }

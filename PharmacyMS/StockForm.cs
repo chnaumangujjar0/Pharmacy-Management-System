@@ -22,6 +22,15 @@ namespace PharmacyMS
         // ── Form Load ─────────────────────────────────────────
         private void StockForm_Load(object sender, EventArgs e)
         {
+            ThemeHelper.ApplyFormTheme(this);
+            ThemeHelper.ApplyHeader(pnlHeader, lblTitle);
+            ThemeHelper.ApplyButton(btnAddStock, ThemeHelper.AccentPurple);
+            ThemeHelper.ApplyComboBox(cmbMedicine);
+            ThemeHelper.ApplyTextBox(txtQuantity);
+            ThemeHelper.ApplyTextBox(txtRemarks);
+            ThemeHelper.ApplyGrid(dgvStock);
+            ThemeHelper.ApplyGrid(dgvHistory);
+            ThemeHelper.FadeIn(this);
             StyleGrid(dgvStock);
             LoadMedicinesDropdown(); // ← Fill combobox
             LoadStockGrid();         // ← Load stock table

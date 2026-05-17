@@ -30,7 +30,7 @@
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.btnExport = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.tabReports = new System.Windows.Forms.TabControl();
             this.tabToday = new System.Windows.Forms.TabPage();
             this.dgvTodayReport = new System.Windows.Forms.DataGridView();
@@ -82,7 +82,7 @@
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(31)))), ((int)(((byte)(56)))));
             this.pnlHeader.Controls.Add(this.btnExport);
-            this.pnlHeader.Controls.Add(this.label1);
+            this.pnlHeader.Controls.Add(this.lblTitle);
             this.pnlHeader.Location = new System.Drawing.Point(0, 1);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1171, 56);
@@ -102,16 +102,16 @@
             this.btnExport.UseVisualStyleBackColor = false;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
-            this.label1.Location = new System.Drawing.Point(20, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 27);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "📊 Reports And Analytics";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(126)))), ((int)(((byte)(34)))));
+            this.lblTitle.Location = new System.Drawing.Point(20, 13);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(308, 27);
+            this.lblTitle.TabIndex = 1;
+            this.lblTitle.Text = "📊 Reports And Analytics";
             // 
             // tabReports
             // 
@@ -545,7 +545,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.TabControl tabReports;
         private System.Windows.Forms.TabPage tabToday;
         private System.Windows.Forms.TabPage tabDateRange;
